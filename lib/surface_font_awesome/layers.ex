@@ -28,9 +28,9 @@ defmodule SurfaceFontAwesome.Layers do
   use SurfaceFontAwesome, :layers
 
   def render(assigns) do
-    ~H"""
-    <span class="fa-layers fa-fw" style={{ @style }}>
-      <slot />
+    ~F"""
+    <span class="fa-layers fa-fw" style={@style}>
+      <#slot />
     </span>
     """
   end
